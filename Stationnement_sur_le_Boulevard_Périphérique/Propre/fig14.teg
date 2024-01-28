@@ -1,0 +1,19 @@
+TeXgraph#
+Graph image = [
+view(-0.5,8.1,-10.1,1.1), Margin(0,0,0,0),size(8),LabelSize:=scriptsize,
+Width:=8, n:=6, m:=0.3,
+for j from 0 to 4 do
+    p:=2*j,
+    LineStyle:=solid,
+   for k from 0 to n-1 do
+    Seg(1.3*k-p*i,1+1.3*k-p*i),
+    LabelDot(1.3*k+0.5+i*(0.175-p),k+1,"S")
+  od,   Seg(0.5+1.3*j+i*(0.1-p),0.5+1.3*j+i*(0.5-p)),Seg(1.8+1.3*j+i*(0.1-p),1.8+1.3*j+i*(0.5-p)),Seg(0.5+1.3*j+i*(0.5-p),1.8+1.3*j+i*(0.5-p)),
+  LineStyle:=dashed,Seg(2.45+1.3*j+i*(0.7-p),2.45+1.3*j-i*(0.7+p)),Seg(-0.15+1.3*j+i*(0.7-p),-0.15+1.3*j-i*(0.7+p))
+od,
+LabelSize:=large,LabelDot(0,"$\left(1\right)$ ","O"),
+LabelSize:=large,LabelDot(-2*i,"$\left(2\right)$ ","O"),
+LabelSize:=large,LabelDot(-4*i,"$\left(3\right)$ ","O"),
+LabelSize:=large,LabelDot(-6*i,"$\left(4\right)$ ","O"),
+LabelSize:=large,LabelDot(-8*i,"$\left(5\right)$ ","O"),
+];

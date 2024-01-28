@@ -1,0 +1,107 @@
+% TeXgraph version 1.98
+\begin{pgfpicture}{-0.3571cm}{-7.2143cm}{5.7857cm}{0.7857cm}%
+\pgfsetxvec{\pgfxy(0.7143,0)}
+\pgfsetyvec{\pgfxy(0,0.7143)}
+%image  (User)
+\pgfsetstrokecolor{rgb,1:red,0;green,0;blue,0}
+\pgfsetlinewidth{0.8pt} 
+\pgfsetroundjoin \pgfxyline(0,0)(1,0)
+\pgfputat{\pgfxy(0.5,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,0)(2.3,0)
+\pgfputat{\pgfxy(1.8,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,0)(3.6,0)
+\pgfputat{\pgfxy(3.1,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,0)(4.9,0)
+\pgfputat{\pgfxy(4.4,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(5.2,0)(6.2,0)
+\pgfputat{\pgfxy(5.7,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(6.5,0)(7.5,0)
+\pgfputat{\pgfxy(7,-0.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfxyline(0.5,0.1)(0.5,0.5)
+\pgfxyline(1.8,0.1)(1.8,0.5)
+\pgfxyline(0.5,0.5)(1.8,0.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(2.45,0.7)(2.45,-0.7)
+\pgfxyline(-0.15,0.7)(-0.15,-0.7)
+\pgfsetdash{}{0pt}
+\pgfxyline(0,-2)(1,-2)
+\pgfputat{\pgfxy(0.5,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,-2)(2.3,-2)
+\pgfputat{\pgfxy(1.8,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,-2)(3.6,-2)
+\pgfputat{\pgfxy(3.1,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,-2)(4.9,-2)
+\pgfputat{\pgfxy(4.4,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(5.2,-2)(6.2,-2)
+\pgfputat{\pgfxy(5.7,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(6.5,-2)(7.5,-2)
+\pgfputat{\pgfxy(7,-2.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfxyline(1.8,-1.9)(1.8,-1.5)
+\pgfxyline(3.1,-1.9)(3.1,-1.5)
+\pgfxyline(1.8,-1.5)(3.1,-1.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(3.75,-1.3)(3.75,-2.7)
+\pgfxyline(1.15,-1.3)(1.15,-2.7)
+\pgfsetdash{}{0pt}
+\pgfxyline(0,-4)(1,-4)
+\pgfputat{\pgfxy(0.5,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,-4)(2.3,-4)
+\pgfputat{\pgfxy(1.8,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,-4)(3.6,-4)
+\pgfputat{\pgfxy(3.1,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,-4)(4.9,-4)
+\pgfputat{\pgfxy(4.4,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(5.2,-4)(6.2,-4)
+\pgfputat{\pgfxy(5.7,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(6.5,-4)(7.5,-4)
+\pgfputat{\pgfxy(7,-4.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfxyline(3.1,-3.9)(3.1,-3.5)
+\pgfxyline(4.4,-3.9)(4.4,-3.5)
+\pgfxyline(3.1,-3.5)(4.4,-3.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(5.05,-3.3)(5.05,-4.7)
+\pgfxyline(2.45,-3.3)(2.45,-4.7)
+\pgfsetdash{}{0pt}
+\pgfxyline(0,-6)(1,-6)
+\pgfputat{\pgfxy(0.5,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,-6)(2.3,-6)
+\pgfputat{\pgfxy(1.8,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,-6)(3.6,-6)
+\pgfputat{\pgfxy(3.1,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,-6)(4.9,-6)
+\pgfputat{\pgfxy(4.4,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(5.2,-6)(6.2,-6)
+\pgfputat{\pgfxy(5.7,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(6.5,-6)(7.5,-6)
+\pgfputat{\pgfxy(7,-6.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfxyline(4.4,-5.9)(4.4,-5.5)
+\pgfxyline(5.7,-5.9)(5.7,-5.5)
+\pgfxyline(4.4,-5.5)(5.7,-5.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(6.35,-5.3)(6.35,-6.7)
+\pgfxyline(3.75,-5.3)(3.75,-6.7)
+\pgfsetdash{}{0pt}
+\pgfxyline(0,-8)(1,-8)
+\pgfputat{\pgfxy(0.5,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,-8)(2.3,-8)
+\pgfputat{\pgfxy(1.8,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,-8)(3.6,-8)
+\pgfputat{\pgfxy(3.1,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,-8)(4.9,-8)
+\pgfputat{\pgfxy(4.4,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(5.2,-8)(6.2,-8)
+\pgfputat{\pgfxy(5.7,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(6.5,-8)(7.5,-8)
+\pgfputat{\pgfxy(7,-8.175)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfxyline(5.7,-7.9)(5.7,-7.5)
+\pgfxyline(7,-7.9)(7,-7.5)
+\pgfxyline(5.7,-7.5)(7,-7.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(7.65,-7.3)(7.65,-8.7)
+\pgfxyline(5.05,-7.3)(5.05,-8.7)
+\pgfputat{\pgfxy(-0.35,0)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\large $\left(1\right)$ }}\pgfstroke
+\pgfputat{\pgfxy(-0.35,-2)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\large $\left(2\right)$ }}\pgfstroke
+\pgfputat{\pgfxy(-0.35,-4)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\large $\left(3\right)$ }}\pgfstroke
+\pgfputat{\pgfxy(-0.35,-6)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\large $\left(4\right)$ }}\pgfstroke
+\pgfputat{\pgfxy(-0.35,-8)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\large $\left(5\right)$ }}\pgfstroke
+\end{pgfpicture}%

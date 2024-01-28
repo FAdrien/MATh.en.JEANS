@@ -1,0 +1,22 @@
+% TeXgraph version 1.98
+\begin{pgfpicture}{-4cm}{-4cm}{4cm}{4cm}%
+\pgfsetxvec{\pgfxy(3.6364,0)}
+\pgfsetyvec{\pgfxy(0,3.6364)}
+%image  (User)
+\pgfsetstrokecolor{rgb,1:red,0;green,0;blue,0}
+\pgfsetlinewidth{0.8pt} 
+\pgfsetroundjoin \pgfellipse[stroke]{\pgfxy(0,0)}{\pgfxy(0,1)}{\pgfxy(-1,0)}
+\pgfxyline(0,0)(0.5,0.866)
+\pgfputat{\pgfxy(0.7485,0.4553)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(0,0)(-0.5,0.866)
+\pgfputat{\pgfxy(-0.0194,0.8748)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(0,0)(-1,0)
+\pgfputat{\pgfxy(-0.7666,0.4195)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(0,0)(-0.5,-0.866)
+\pgfputat{\pgfxy(-0.746,-0.4553)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(0,0)(0.5,-0.866)
+\pgfputat{\pgfxy(0.0219,-0.8748)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(0,0)(1,-0)
+\pgfputat{\pgfxy(0.7691,-0.4195)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfsetfillcolor{rgb,1:red,1;green,1;blue,1}\pgfellipse[fillstroke]{\pgfxy(0,0)}{\pgfxy(0,0.75)}{\pgfxy(-0.75,0)}
+\end{pgfpicture}%

@@ -1,0 +1,50 @@
+% TeXgraph version 1.98
+\begin{pgfpicture}{-0.1947cm}{-1.0708cm}{10.8053cm}{1.0708cm}%
+\pgfsetxvec{\pgfxy(0.9735,0)}
+\pgfsetyvec{\pgfxy(0,0.9735)}
+%image  (User)
+\pgfsetstrokecolor{rgb,1:red,0;green,0;blue,0}
+\pgfsetlinewidth{0.8pt} 
+\pgfsetroundjoin \pgfxyline(0,0)(1,0)
+\pgfputat{\pgfxy(0.5,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(1.3,0)(2.3,0)
+\pgfputat{\pgfxy(1.8,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(2.6,0)(3.6,0)
+\pgfputat{\pgfxy(3.1,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(3.9,0)(4.9,0)
+\pgfputat{\pgfxy(4.4,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(6,0)(7,0)
+\pgfputat{\pgfxy(6.5,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(7.3,0)(8.3,0)
+\pgfputat{\pgfxy(7.8,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(8.6,0)(9.6,0)
+\pgfputat{\pgfxy(9.1,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(9.9,0)(10.9,0)
+\pgfputat{\pgfxy(10.4,-0.0818)}{\pgftext[top]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfpathmoveto{\pgfxy(1.9206,0.6618)}
+\pgfpathcurveto{\pgfxy(2.2316,0.9106)}{\pgfxy(2.6684,0.9106)}{\pgfxy(2.9794,0.6618)}
+\pgfstroke
+\pgfsetarrows{-to}
+\pgfxyline(2.9713,0.6681)(2.9794,0.6618)
+\pgfsetarrows{-}
+\pgfpathmoveto{\pgfxy(7.9206,0.6618)}
+\pgfpathcurveto{\pgfxy(8.2316,0.9106)}{\pgfxy(8.6684,0.9106)}{\pgfxy(8.9794,0.6618)}
+\pgfstroke
+\pgfsetarrows{-to}
+\pgfxyline(7.9287,0.6681)(7.9206,0.6618)
+\pgfsetarrows{-}
+\pgfxyline(0.5,0.1)(0.5,0.5)
+\pgfxyline(1.8,0.1)(1.8,0.5)
+\pgfxyline(0.5,0.5)(1.8,0.5)
+\pgfxyline(9.1,0.1)(9.1,0.5)
+\pgfxyline(10.4,0.1)(10.4,0.5)
+\pgfxyline(9.1,0.5)(10.4,0.5)
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(2.45,0.7)(2.45,-0.7)
+\pgfxyline(8.45,0.7)(8.45,-0.7)
+\pgfxyline(-0.15,0.7)(-0.15,-0.7)
+\pgfxyline(11.05,0.7)(11.05,-0.7)
+\pgfsetlinewidth{2pt} 
+\pgfsetdash{}{0pt}
+\pgfxyline(5.15,-0.5)(5.75,0.5)
+\end{pgfpicture}%

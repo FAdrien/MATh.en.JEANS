@@ -1,0 +1,16 @@
+TeXgraph#
+Graph image = [
+view(-1.1,1.15,-1.1,1.1), Margin(0,0,0,0),size(8),LabelSize:=scriptsize,
+Width:=8, R:=1, r:=3*R/4, n:=6,
+Cercle(0,R),
+for k from 1 to n do
+  Seg(0,R*exp(i*k*2*pi/n)),
+  LabelDot(0.07+(R-0.125)*exp(i*k*2*pi/n-0.5*i),k,"O")
+od,
+FillStyle:=full,Cercle(0,r),
+FillColor:=black,FillStyle:=bdiag,
+wedge(R*exp(i*12*pi/n),0,R*exp(i*4*pi/n),R),
+FillColor:=white,FillStyle:=full,Cercle(0,r),
+LineStyle:=dashed,Width:=10,Seg(0,1.15*exp(i*12*pi/n)),Seg(0,1.15*exp(i*4*pi/n)),
+FillColor:=white,FillStyle:=full,Color:=white,Cercle(0,0.61)
+];

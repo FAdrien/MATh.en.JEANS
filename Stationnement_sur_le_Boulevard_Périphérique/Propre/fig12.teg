@@ -1,0 +1,16 @@
+TeXgraph#
+Graph image = [
+view(-0.1,1.9,-1,1), Margin(0,0,0,0),size(8),LabelSize:=scriptsize,
+Width:=8, b:=2,
+LabelDot(0,"","SO",1),
+for k from 0 to b-1 do
+  Seg(0,exp(i*(k+3*b/2+0.5)*pi/b))
+od,
+LabelDot(exp(i*3.5*pi/b),"$\frac{2}{3}$","E",1),
+LabelDot(exp(i*4.5*pi/b),"$\frac{1}{3}$","E",1),
+Arrows:=1,
+Seg(exp(i*4.5*pi/b)+0.15,exp(i*4.5*pi/b)+0.5),
+Seg(exp(i*3.5*pi/b)+0.15,exp(i*3.5*pi/b)+0.5),
+LabelDot(exp(i*3.5*pi/b)+0.5,"$2\text{ voitures}$","E"),
+LabelDot(exp(i*4.5*pi/b)+0.5,"$1\text{ voiture}$","E")
+];

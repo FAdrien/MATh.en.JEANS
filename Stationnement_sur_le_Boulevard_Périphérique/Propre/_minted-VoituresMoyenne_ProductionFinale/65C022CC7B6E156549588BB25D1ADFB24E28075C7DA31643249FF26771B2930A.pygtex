@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{l2}\PYG{o}{=}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} Nombre moyen de voiture en fonction du nombre de tirets.}
+\PYG{k}{def} \PYG{n+nf}{E\PYGZus{}2}\PYG{p}{(}\PYG{n}{t}\PYG{p}{):}
+    \PYG{k}{global} \PYG{n}{l2}                     \PYG{c+c1}{\PYGZsh{} Ceci permet de modifier la liste l2.}
+    \PYG{c+c1}{\PYGZsh{} On calcule et on ajoute dans la liste la valeur suivante.}
+    \PYG{n}{l2}\PYG{o}{.}\PYG{n}{append}\PYG{p}{((}\PYG{n}{t}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{o}{*}\PYG{n}{l2}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{+}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{l2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{t}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{))}
+    \PYG{n}{l2}\PYG{o}{=}\PYG{n}{l2}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]}                     \PYG{c+c1}{\PYGZsh{} On supprime la plus vieille.}
+\end{Verbatim}

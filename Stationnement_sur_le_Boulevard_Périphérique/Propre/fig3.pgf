@@ -1,0 +1,67 @@
+% TeXgraph version 1.98
+\begin{pgfpicture}{-3.9111cm}{-3.9111cm}{4.0889cm}{3.9111cm}%
+\pgfsetxvec{\pgfxy(3.5556,0)}
+\pgfsetyvec{\pgfxy(0,3.5556)}
+%image  (User)
+\pgfsetstrokecolor{rgb,1:red,0;green,0;blue,0}
+\pgfsetlinewidth{0.8pt} 
+\pgfsetroundjoin \pgfellipse[stroke]{\pgfxy(0,0)}{\pgfxy(0,1)}{\pgfxy(-1,0)}
+\pgfxyline(0,0)(0.5,0.866)
+\pgfputat{\pgfxy(0.7469,0.4553)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 1}}\pgfstroke
+\pgfxyline(0,0)(-0.5,0.866)
+\pgfputat{\pgfxy(-0.021,0.8748)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 2}}\pgfstroke
+\pgfxyline(0,0)(-1,0)
+\pgfputat{\pgfxy(-0.7682,0.4195)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 3}}\pgfstroke
+\pgfxyline(0,0)(-0.5,-0.866)
+\pgfputat{\pgfxy(-0.7476,-0.4553)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 4}}\pgfstroke
+\pgfxyline(0,0)(0.5,-0.866)
+\pgfputat{\pgfxy(0.0203,-0.8748)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 5}}\pgfstroke
+\pgfxyline(0,0)(1,-0)
+\pgfputat{\pgfxy(0.7676,-0.4195)}{\pgftext[right]{\color{rgb,1:red,0;green,0;blue,0}\scriptsize 6}}\pgfstroke
+\pgfsetfillcolor{rgb,1:red,1;green,1;blue,1}\pgfellipse[fillstroke]{\pgfxy(0,0)}{\pgfxy(0,0.75)}{\pgfxy(-0.75,0)}
+% hachures
+\pgfsetlinewidth{0.2pt}
+\pgfxyline(-0.4995,0.8652)(-0.8632,0.5016)\pgfxyline(-0.4777,0.8274)(-0.922,0.3831)\pgfxyline(-0.4559,0.7896)(-0.9552,0.2902)
+\pgfxyline(-0.434,0.7517)(-0.9769,0.2089)\pgfxyline(-0.4122,0.7139)(-0.9897,0.1364)\pgfxyline(-0.3903,0.6761)(-0.9959,0.0705)
+\pgfxyline(-0.3685,0.6383)(-0.9996,0.0072)\pgfxyline(-0.3467,0.6004)(-0.9971,-0.05)\pgfxyline(-0.3248,0.5626)(-0.9938,-0.1064)
+\pgfxyline(-0.303,0.5248)(-0.9858,-0.1581)\pgfxyline(-0.2811,0.487)(-0.9769,-0.2088)\pgfxyline(-0.2593,0.4491)(-0.9652,-0.2568)
+\pgfxyline(-0.2375,0.4113)(-0.9515,-0.3027)\pgfxyline(-0.2156,0.3735)(-0.9371,-0.348)\pgfxyline(-0.1938,0.3357)(-0.9191,-0.3897)
+\pgfxyline(-0.172,0.2978)(-0.9012,-0.4314)\pgfxyline(-0.1501,0.26)(-0.8809,-0.4708)\pgfxyline(-0.1283,0.2222)(-0.8591,-0.5086)
+\pgfxyline(-0.1064,0.1844)(-0.8373,-0.5464)\pgfxyline(-0.0846,0.1465)(-0.8121,-0.5809)\pgfxyline(-0.0628,0.1087)(-0.7866,-0.6151)
+\pgfxyline(-0.0409,0.0709)(-0.7605,-0.6487)\pgfxyline(-0.0191,0.0331)(-0.7315,-0.6794)\pgfxyline(-0.0102,-0.0177)(-0.7026,-0.7101)
+\pgfxyline(-0.0917,-0.1589)(-0.6721,-0.7392)\pgfxyline(-0.1732,-0.3001)(-0.6396,-0.7665)\pgfxyline(-0.2547,-0.4412)(-0.6072,-0.7937)
+\pgfxyline(-0.3362,-0.5824)(-0.5723,-0.8185)\pgfxyline(-0.4177,-0.7236)(-0.5363,-0.8421)\pgfxyline(-0.4992,-0.8647)(-0.5003,-0.8658)
+% fin hachures
+\pgfsetlinewidth{0.8pt} 
+\pgfpathmoveto{\pgfxy(-0.5,-0.866)}\pgfpatharc{240}{120}{3.5556cm}
+\pgfpathlineto{\pgfxy(0,0)}
+\pgfclosepath
+\pgfstroke
+% hachures
+\pgfsetlinewidth{0.2pt}
+\pgfxyline(0.5094,0.8599)(0.4788,0.8292)\pgfxyline(0.5454,0.8362)(0.3973,0.6881)\pgfxyline(0.5814,0.8125)(0.3158,0.5469)
+\pgfxyline(0.6154,0.7868)(0.2343,0.4057)\pgfxyline(0.6478,0.7596)(0.1528,0.2646)\pgfxyline(0.6802,0.7324)(0.0713,0.1234)
+\pgfxyline(0.7098,0.7024)(0.0027,-0.0048)\pgfxyline(0.7388,0.6717)(0.0246,-0.0426)\pgfxyline(0.7676,0.6407)(0.0464,-0.0804)
+\pgfxyline(0.793,0.6065)(0.0683,-0.1182)\pgfxyline(0.8185,0.5723)(0.0901,-0.1561)\pgfxyline(0.8427,0.5369)(0.1119,-0.1939)
+\pgfxyline(0.8646,0.4991)(0.1338,-0.2317)\pgfxyline(0.8864,0.4613)(0.1556,-0.2695)\pgfxyline(0.9057,0.4209)(0.1774,-0.3073)
+\pgfxyline(0.9237,0.3792)(0.1993,-0.3452)\pgfxyline(0.9412,0.3371)(0.2211,-0.383)\pgfxyline(0.9549,0.2911)(0.243,-0.4208)
+\pgfxyline(0.9687,0.2452)(0.2648,-0.4586)\pgfxyline(0.9791,0.196)(0.2866,-0.4965)\pgfxyline(0.9881,0.1453)(0.3085,-0.5343)
+\pgfxyline(0.9946,0.0922)(0.3303,-0.5721)\pgfxyline(0.9979,0.0358)(0.3522,-0.6099)\pgfxyline(0.9987,-0.0231)(0.374,-0.6478)
+\pgfxyline(0.995,-0.0865)(0.3958,-0.6856)\pgfxyline(0.9864,-0.1546)(0.4177,-0.7234)\pgfxyline(0.9737,-0.2271)(0.4395,-0.7612)
+\pgfxyline(0.9488,-0.3116)(0.4613,-0.7991)\pgfxyline(0.9106,-0.4095)(0.4832,-0.8369)\pgfxyline(0.8427,-0.537)(0.54,-0.8397)
+% fin hachures
+\pgfsetlinewidth{0.8pt} 
+\pgfpathmoveto{\pgfxy(0.5,-0.866)}\pgfpatharc{-60}{60}{3.5556cm}
+\pgfpathlineto{\pgfxy(0,0)}
+\pgfclosepath
+\pgfstroke
+\pgfellipse[fillstroke]{\pgfxy(0,0)}{\pgfxy(0,0.75)}{\pgfxy(-0.75,0)}
+\pgfsetlinewidth{1pt} 
+\pgfsetdash{{5pt}{3pt}}{0pt}
+\pgfxyline(0,0)(0.575,-0.9959)
+\pgfxyline(0,0)(0.575,0.9959)
+\pgfxyline(0,0)(-0.575,0.9959)
+\pgfxyline(0,0)(-0.575,-0.9959)
+\pgfsetstrokecolor{rgb,1:red,1;green,1;blue,1}
+\pgfellipse[fillstroke]{\pgfxy(0,0)}{\pgfxy(0,0.61)}{\pgfxy(-0.61,0)}
+\end{pgfpicture}%

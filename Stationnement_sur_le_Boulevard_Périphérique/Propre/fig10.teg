@@ -1,0 +1,19 @@
+TeXgraph#
+Graph image = [
+view(-0.2,11.1,-1.1,1.1), Margin(0,0,0,0),size(11),LabelSize:=scriptsize,
+Width:=8, n:=4, m:=0.3,
+for k from 0 to n-1 do
+  Seg(1.3*k,1+1.3*k),
+  LabelDot(1.3*k+0.5+0.175*i,k+1,"S")
+od,
+for k from 0 to n-1 do
+  Seg(6+1.3*k,7+1.3*k),
+  LabelDot(6+1.3*k+0.5+0.175*i,k+1,"S")
+od,
+LabelArc(2.05+0.5*i,2.45,2.85+0.5*i,0.825,-1),flecher(Get(LabelArc(2.05+0.5*i,2.45,2.85+0.5*i,0.825,-1)),1),
+LabelArc(8.05+0.5*i,8.45,8.85+0.5*i,0.825,-1),flecher(Get(LabelArc(8.05+0.5*i,8.45,8.85+0.5*i,0.825,-1)),i),
+Seg(0.5+0.1*i,0.5+0.5*i),Seg(1.8+0.1*i,1.8+0.5*i),Seg(0.5+0.5*i,1.8+0.5*i),
+Seg(9.1+0.1*i,9.1+0.5*i),Seg(10.4+0.1*i,10.4+0.5*i),Seg(9.1+0.5*i,10.4+0.5*i),
+LineStyle:=dashed,Seg(2.45+0.7*i,2.45-0.7*i),Seg(8.45+0.7*i,8.45-0.7*i),Seg(-0.15+0.7*i,-0.15-0.7*i),Seg(11.05+0.7*i,11.05-0.7*i),
+LineStyle:=solid, Width:=20, Seg(5.15-0.5*i,5.75+0.5*i)
+];

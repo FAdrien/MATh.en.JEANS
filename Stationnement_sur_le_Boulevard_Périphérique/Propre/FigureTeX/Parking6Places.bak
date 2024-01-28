@@ -1,0 +1,47 @@
+TeXgraph#
+{version 1.98}
+Cmd
+	Window(-1.1+1.1*i, 1.1-1.1*i, 4.54545454545455+4.54545454545455*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=1];
+
+Var
+    draw2dVer = 0.8;
+
+Include
+	"markers.mac";
+	"gradients.mac";
+	"draw2d.mac";
+
+Mac
+    defaultGradLineOptions = [
+	LineColorA:=white {début}, 
+	LineColorB:=red {fin}, 
+	close:=0 {fermée ou non},
+	GradLineStep:=0.35 {pas}
+	];
+    defaultShadePathOptions = [
+	FillColorA:=white {début},
+	FillColorB:=red {fin}, 
+	GradStyle:=linear {ou radial},
+	GradAngle:=0 {degrés},
+	RadialCenter:=0.25+0.75*i {dans [0;1]x[0;1]},
+	];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph Cercle1 = [
+	view(-1.1,1.1,-1.1,1.1), Margin(0,0,0,0),size(10),LabelSize:=scriptsize,
+	Width:=8, R:=1, r:=3*R/4, n:=6,
+	Cercle(0,R),
+	for k from 1 to n do
+	  Seg(0,R*exp(i*k*2*pi/n)),
+	  LabelDot(0.07+(R-0.125)*exp(i*k*2*pi/n-0.5*i),k,"O")
+	od,
+	FillStyle:=full,Cercle(0,r),
+	FillColor:=black,FillStyle:=bdiag,
+	wedge(R*exp(i*4*2*pi/n),0,R*exp(i*2*2*pi/n),R),
+	FillColor:=white,FillStyle:=full,Cercle(0,r)
+	];

@@ -1,0 +1,44 @@
+TeXgraph#
+{version 1.98}
+Cmd
+	Window(-0.1+1.1*i, 7.1-1.1*i, 0.972222222222222+0.972222222222222*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=1];
+
+Var
+    draw2dVer = 0.8;
+
+Include
+	"markers.mac";
+	"gradients.mac";
+	"draw2d.mac";
+
+Mac
+    defaultGradLineOptions = [
+	LineColorA:=white {début}, 
+	LineColorB:=red {fin}, 
+	close:=0 {fermée ou non},
+	GradLineStep:=0.35 {pas}
+	];
+    defaultShadePathOptions = [
+	FillColorA:=white {début},
+	FillColorB:=red {fin}, 
+	GradStyle:=linear {ou radial},
+	GradAngle:=0 {degrés},
+	RadialCenter:=0.25+0.75*i {dans [0;1]x[0;1]},
+	];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph Cercle1 = [
+	view(-0.1,7.1,-1.1,1.1), Margin(0,0,0,0),size(7),LabelSize:=scriptsize,
+	Width:=8, n:=6, m:=0.3,
+	for k from 0 to n-1 do
+	  Seg(1.3*k,1+1.3*k),
+	  LabelDot(1.3*k+0.5+0.175*i,mod((k+1),4),"S")
+	od,
+	Seg(0.5+0.1*i,0.5+0.5*i),Seg(1.8+0.1*i,1.8+0.5*i),Seg(0.5+0.5*i,1.8+0.5*i),
+	LineStyle:=dashed,Seg(2.45+0.7*i,2.45-0.7*i)
+	];

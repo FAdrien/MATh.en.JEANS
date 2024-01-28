@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Construire une liste contenant toutes les places disponibles,
+Tant qu\PYGZsq{}il reste des places non utilisées :
+    On prend une place au hasard dans la liste,
+    On supprime les places adjacentes inutilisables ainsi que celle choisie,
+À la fin, on retourne le nombre total de voitures garées.
+\end{Verbatim}
