@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Définir une position rationnelle,
+Définir une précision (le nombre de chiffres à calculer),
+Définir \PYGZsq{}unité\PYGZsq{} (le chiffre des unités de la position) et le mettre à 0,
+Définir la chaîne de caractère \PYGZsq{}binaire\PYGZsq{},
+Tant qu\PYGZsq{}il reste des chiffres à calculer :
+    Doubler le numérateur,
+    Si le numérateur est supérieur ou égal au dénominateur :
+        Mettre \PYGZsq{}unité\PYGZsq{} à 1,
+    Sinon :
+        Mettre \PYGZsq{}unité\PYGZsq{} à 0,
+    Ajouter \PYGZsq{}unité\PYGZsq{} à la chaîne \PYGZsq{}binaire\PYGZsq{},
+    Soustraire le dénominateur au numérateur si \PYGZsq{}unité\PYGZsq{} vaut 1,
+Afficher \PYGZsq{}binaire\PYGZsq{}.
+\end{Verbatim}

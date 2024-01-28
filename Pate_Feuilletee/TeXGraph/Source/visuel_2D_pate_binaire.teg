@@ -1,0 +1,35 @@
+TeXgraph#
+{version 1.988}
+Cmd
+	Window(-0.1+1.1*i, 1.1-0.1*i, 10+10*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=0];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph user_1 = [//command
+	view(-0.1,1.1,-0.1,1.1),Margin(0,0,0,0),size(12),Width:=8,
+		Dcarre(i,0),
+		LabelSize:=19,
+	        Label(-i/20,"$0$","S"),Label(1-i/20,"$1$","S"),
+	        Width:=14,
+	        Seg(1/2+1.08*i,1/2-0.08*i),
+	        Label(1/4+1.04*i,"$0$","N"),Label(3/4+1.04*i,"$1$","N"),
+	        Width:=12,
+	        LineStyle:=dashed,
+	        Seg(1/4+i,1/4),Seg(3/4+i,3/4),
+	        Label(1/8+0.96*i,"$0$","N"),Label(3/8+0.96*i,"$1$","N"),
+	        Label(5/8+0.96*i,"$0$","N"),Label(7/8+0.96*i,"$1$","N"),
+	        Width:=8,
+	        LineStyle:=dotted,
+	        Seg(1/8+0.92*i,1/8+0.08*i),Seg(3/8+0.92*i,3/8+0.08*i),
+	        Seg(5/8+0.92*i,5/8+0.08*i),Seg(7/8+0.92*i,7/8+0.08*i),
+	        Label(1/16+0.88*i,"$0$","N"),Label(3/16+0.88*i,"$1$","N"),
+	        Label(5/16+0.88*i,"$0$","N"),Label(7/16+0.88*i,"$1$","N"),
+	        Label(9/16+0.88*i,"$0$","N"),Label(11/16+0.88*i,"$1$","N"),
+	        Label(13/16+0.88*i,"$0$","N"),Label(15/16+0.88*i,"$1$","N"),
+	
+	        LabelDot(0.294+0.63*i,"$x$","N",1)
+	];

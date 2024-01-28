@@ -1,0 +1,31 @@
+TeXgraph#
+{version 1.988}
+Cmd
+	Window(-0.3+2.25*i, 11.2-0.2*i, 3.47826086956522+3.47826086956522*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=1];
+
+Cmd	[tMin:=-5,tMax:=1.9,DotScale:=1+i];
+Graph user_1 = [//command
+	view(-0.3,11.2,-0.2,2.25),Margin(0,0,0,0),size(40),Width:=8,LabelSize:=19,
+	E:=2,Be:=1.5,Bd:=Be/2,Bt:=i/3,s:=0,Es:=i/3.5,
+	L1:=["$2x$","$-2x+2$","$x$"],
+	L2:=["$4x$","$-4x+2$","$-4x+4$","$4x-2$","$2x$","$-2x+2$","$x$"],
+	L3:=["$8x$","$-8x+2$","$-8x+4$","$8x-2$","$-8x+8$","$8x-6$","$8x-4$","$-8x+6$","$4x$","$-4x+2$","$-4x+4$","$4x-2$","$2x$","$-2x+2$","$x$"],
+	d:=1,
+	for k in range(E+1) do
+	    for j in range(0,2^(E-k+1)-1) do
+	        Seg(2*j*Be+(k-1)*Bt+s*Bd+(k-1)*Es,2*j*Be+k*Bt+s*Bd+(k-1)*Es),Seg(2*j*Be+Be+(k-1)*Bt+s*Bd+(k-1)*Es,2*j*Be+k*Bt+Be+s*Bd+(k-1)*Es),
+	        Seg(2*j*Be+k*Bt+s*Bd+(k-1)*Es,2*j*Be+k*Bt+Be+s*Bd+(k-1)*Es),
+	        Label(2*j*Be+(k-1)*Bt+s*Bd+(k-1)*Es-i/10,L3[d]),Label(2*j*Be+Be+(k-1)*Bt+s*Bd+(k-1)*Es-i/10,L3[d+1]),
+	        d:=d+2,
+	    od,
+	    s:=s+2^(k-1),
+	    Be:=2*Be,
+	od,
+	Seg(2^(E+1)*Bd-Bd+(E+1)*Bt+E*Es,2^(E+1)*Bd-Bd+(E+2)*Bt+E*Es),
+	Label(2^(E+1)*Bd-Bd+(E+2)*Bt+i/5+E*Es,L3[0])
+	];

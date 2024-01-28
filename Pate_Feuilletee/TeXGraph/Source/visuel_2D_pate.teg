@@ -1,0 +1,39 @@
+TeXgraph#
+{version 1.988}
+Cmd
+	Window(-0.1+1.15*i, 3.1-3.36*i, 9.75609756097561+9.75609756097561*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=0];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph user_1 = [//command
+	view(-0.1,3.1,-3.36,1.15),Margin(0,0,0,0),size(44),Width:=8,
+	Dcarre(i,0),Dcarre(2+i,2),
+	Dcarre(-i/6,-i/6-i),Dcarre(-i/6-i,-i/6-2*i),Dcarre(2-i/6,2-i/6-i),Dcarre(2-i/6-i,2-i/6-2*i),
+	Dcarre(-2*i/6-2*i,-2*i/6-3*i),Dcarre(2-2*i/6-2*i,2-2*i/6-3*i),
+	LabelSize:=19,
+	Label(1/2+11*i/10,"\textbf{A}"),Label(5/2+11*i/10,"\textbf{B}"),Label(3/2-i/12,"\textbf{Étalage}"),Label(3/2-3*i/12-2*i,"\textbf{Pliage}"),
+	Label(-1/20+i,"$0$","S"),Label(-1/20+i/2,"$\frac{1}{2}$","S"),Label(-1/20,"$1$","S"),
+	Label(3+1/20+i,"$0$","S"),Label(3+1/20+i/2,"$\frac{1}{2}$","S"),Label(3+1/20,"$1$","S"),
+	Label(-1/20-i/6,"$0$","S"),Label(-1/20-i/6-i,"$1$","S"),Label(-1/20-i/6-2*i,"$2$","S"),
+	Label(3+1/20-i/6,"$0$","S"),Label(3+1/20-i/6-i,"$1$","S"),Label(3+1/20-i/6-2*i,"$2$","S"),
+	Label(-1/20-i/3-2*i,"$0$","S"),Label(-1/20-i/3-3*i,"$1$","S"),
+	Label(3+1/20-i/3-2*i,"$0$","S"),Label(3+1/20-i/3-3*i,"$1$","S"),
+	LineStyle:=dashed,
+	Seg(i/2,1+i/2),Seg(2+i/2,3+i/2),
+	LineStyle:=normal,Width:=12,Arrows:=1,
+	Seg(1/2-i/50,1/2-i/6+i/50),Seg(2+1/2-i/50,2+1/2-i/6+i/50),
+	Seg(1/2-i/6-i/50-2*i,1/2-2*i/6+i/50-2*i),Seg(5/2-i/6-i/50-2*i,5/2-2*i/6+i/50-2*i),
+	LabelArc(1-i/6-3*i/2,1-i/6-i,1-i/6-i/2,3/2,1),LabelArc(2-i/6-3*i/2,2-i/6-i,2-i/6-i/2,3/2,-1),
+	DotScale:=1.5,
+	Dot(7/10+7*i/9),Dot(7/10-i/6-4*i/9),Dot(7/10-i/3-4*i/9-2*i),
+	Dot(2+3/10+4*i/9),Dot(2+3/10-i/6-10*i/9),Dot(2+3/10-i/3-8*i/9-2*i),
+	Arrows:=0,
+	Seg(7/10+7*i/9,7/10+i),Seg(7/10-i/6-4*i/9,7/10-i/6),Seg(7/10-i/3-4*i/9-2*i,7/10-i/3-2*i),
+	Seg(2+3/10+4*i/9,2+3/10+i),Seg(2+3/10-i/6-10*i/9,2+3/10-i/6),Seg(2+3/10-i/3-8*i/9-2*i,2+3/10-i/3-2*i),
+	Label((7/10+7*i/9+7/10+i)/2-1/20,"$x$"),Label((7/10-i/6-4*i/9+7/10-i/6)/2-1/15,"$2x$"),Label((7/10-i/3-4*i/9-2*i+7/10-i/3-2*i)/2-1/15,"$2x$"),
+	Label((2+3/10+4*i/9+2+3/10+i)/2+1/20,"$x$"),Label((2+3/10-i/6-10*i/9+2+3/10-i/6)/2+1/15,"$2x$"),Label((2+3/10-i/3-8*i/9-2*i+2+3/10-i/3-2*i)/2+1/7,"$2-2x$")
+	];

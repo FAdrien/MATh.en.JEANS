@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{binaire}\PYG{p}{(}\PYG{n}{num}\PYG{p}{,}\PYG{n}{den}\PYG{p}{,}\PYG{n}{precision}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Converti une position \PYGZdq{}num/den\PYGZdq{} en binaire.\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{binaire}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}} \PYG{c+c1}{\PYGZsh{} Résultat en binaire.}
+    \PYG{n}{unite}\PYG{o}{=}\PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} Chiffre des unité de la position.}
+    \PYG{k}{for} \PYG{n}{k} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{precision}\PYG{p}{):} \PYG{c+c1}{\PYGZsh{} On calcul \PYGZsq{}precision\PYGZsq{} chiffres après la virgule.}
+        \PYG{n}{num}\PYG{o}{*=}\PYG{l+m+mi}{2}
+        \PYG{k}{if} \PYG{n}{num}\PYG{o}{\PYGZgt{}=}\PYG{n}{den}\PYG{p}{:} \PYG{n}{unite}\PYG{o}{=}\PYG{l+m+mi}{1} \PYG{c+c1}{\PYGZsh{} Si \PYGZsq{}num/den\PYGZsq{} a pour chiffre des unités 1.}
+        \PYG{k}{else}\PYG{p}{:} \PYG{n}{unite}\PYG{o}{=}\PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} Sinon \PYGZsq{}num/den\PYGZsq{} a pour chiffre des unités 0.}
+        \PYG{n}{binaire}\PYG{o}{+=}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{unite}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} On ajoute ce chiffre des unités.}
+        \PYG{n}{num}\PYG{o}{\PYGZhy{}=}\PYG{n}{den}\PYG{o}{*}\PYG{n}{unite} \PYG{c+c1}{\PYGZsh{} On soustrait le dénominateur au numérateur si \PYGZsq{}unité\PYGZsq{} vaut 1.}
+    \PYG{c+c1}{\PYGZsh{} On renvoie le nombre en binaire avec \PYGZsq{}precision\PYGZsq{} chiffres après la virgule.}
+    \PYG{k}{return} \PYG{n}{binaire}
+\end{Verbatim}

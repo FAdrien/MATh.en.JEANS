@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{sympy} \PYG{k+kn}{import} \PYG{n}{divisors}
+
+\PYG{n}{d}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}}  \PYG{c+c1}{\PYGZsh{} Contient : \PYGZsq{}clé\PYGZsq{} (le nombre d\PYGZsq{}étape, \PYGZsq{}n\PYGZsq{}) et \PYGZsq{}valeur\PYGZsq{} (nombre de solutions d\PYGZsq{}orbite \PYGZsq{}n\PYGZsq{}).}
+\PYG{k}{def} \PYG{n+nf}{S\PYGZus{}n}\PYG{p}{(}\PYG{n}{n}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Fonction récurrente pour obtenir le nombre de solutions d\PYGZsq{}orbite \PYGZsq{}n\PYGZsq{}.\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{S}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{**}\PYG{n}{n}  \PYG{c+c1}{\PYGZsh{} Le nombre de solutions de période divisant \PYGZsq{}n\PYGZsq{}.}
+    \PYG{k}{for} \PYG{n}{diviseur} \PYG{o+ow}{in} \PYG{n}{divisors}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)[:}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]:}  \PYG{c+c1}{\PYGZsh{} On parcourt la liste des diviseurs de \PYGZsq{}n\PYGZsq{} sauf \PYGZsq{}n\PYGZsq{}.}
+        \PYG{n}{v}\PYG{o}{=}\PYG{n}{d}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{n}{diviseur}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}
+        \PYG{k}{if} \PYG{n}{v}\PYG{p}{:}  \PYG{c+c1}{\PYGZsh{} Si on connaît le nombre de solutions d\PYGZsq{}orbite \PYGZsq{}diviseur\PYGZsq{}.}
+            \PYG{n}{S}\PYG{o}{\PYGZhy{}=}\PYG{n}{v}  \PYG{c+c1}{\PYGZsh{} On le soustrait à \PYGZsq{}S\PYGZsq{}.}
+        \PYG{k}{else}\PYG{p}{:}  \PYG{c+c1}{\PYGZsh{} Sinon on le calcul, on l\PYGZsq{}ajoute au dictionnaire puis on le soustrait.}
+            \PYG{n}{v}\PYG{o}{=}\PYG{n}{S\PYGZus{}n}\PYG{p}{(}\PYG{n}{diviseur}\PYG{p}{)}
+            \PYG{n}{d}\PYG{p}{[}\PYG{n}{diviseur}\PYG{p}{]}\PYG{o}{=}\PYG{n}{v}
+            \PYG{n}{S}\PYG{o}{\PYGZhy{}=}\PYG{n}{v}
+    \PYG{k}{return} \PYG{n}{S}
+\end{Verbatim}

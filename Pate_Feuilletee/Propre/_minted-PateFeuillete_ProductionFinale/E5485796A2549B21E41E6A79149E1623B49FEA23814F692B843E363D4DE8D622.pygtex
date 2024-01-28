@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Définir un dictionnaire, \PYGZsh{} Pour éviter de recalculer certaines valeurs.
+Définir une fonction récurrente de paramètre n (un entier naturel),
+Définir le résultat S et y stocker 2**n,
+Pour chaque diviseur strict positif d de n :
+    Si on connaît déjà S(d) :
+        Mettre S à S\PYGZhy{}S(d),
+    Sinon :
+        Ré\PYGZhy{}appeler la fonction avec comme paramètre d,
+        Stocker dans le dictionnaire la couple clé\PYGZhy{}valeur (d,S(d)),
+        Mettre S à S\PYGZhy{}S(d),
+Retourner S
+\end{Verbatim}

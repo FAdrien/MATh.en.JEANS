@@ -1,0 +1,18 @@
+TeXgraph#
+{version 1.988}
+Cmd
+	Window(-0.1+1.1*i, 2.1-0.1*i, 10+10*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=0];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph user_1 = [//command
+	view(-0.1,2.1,-0.1,1.1),Margin(0,0,0,0),size(22),Width:=8,
+	Dcarre(i,0),Dcarre(1+i,1),
+	LabelSize:=17,
+	Label(1/2+i/2,"\textbf{I}"),Label(3/2+i/2,"\textbf{II}"),
+	Label(-i/20,"$0$","S"),Label(1-i/20,"$1$","S"),Label(2-i/20,"$2$","S")
+	];

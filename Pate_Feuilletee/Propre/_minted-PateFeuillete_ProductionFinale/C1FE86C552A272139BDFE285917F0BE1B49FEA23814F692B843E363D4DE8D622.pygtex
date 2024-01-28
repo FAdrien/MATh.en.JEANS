@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Importer la fonction \PYGZsq{}position\PYGZus{}apres\PYGZus{}etape\PYGZsq{},
+Définir une position entre 0 et 1,
+Définir un nombre d\PYGZsq{}étape maximal (si jamais la position n\PYGZsq{}est pas périodique),
+Tant que le nombre maximal d\PYGZsq{}étape n\PYGZsq{}est pas atteint :
+    Effectuer une étape,
+    Modifier l\PYGZsq{}ancien numérateur par celui obtenue au\PYGZhy{}dessus,
+    Si ce nouveau numérateur est égal au numérateur initial :
+        Afficher que la position est périodique et sa période,
+Afficher que la position ne se répète avant le nombre d\PYGZsq{}étape maximal fixé.
+\end{Verbatim}

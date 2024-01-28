@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Définir une chaîne binaire,
+Définir un booléen périodique (si le bloc de chiffres \PYGZsq{}binaire\PYGZsq{} se répète),
+Définir un booléen irréductible (si la fraction renvoyée devra être irréductible),
+Définir un numérateur et le mettre à 0,
+Définir un dénominateur et le mettre à 1,
+Pour chaque chiffre de \PYGZsq{}binaire\PYGZsq{} à l\PYGZsq{}envers : (pour plus de rapidité)
+    Multiplier le chiffre par \PYGZsq{}dénominateur\PYGZsq{} et l\PYGZsq{}ajouter à \PYGZsq{}numérateur\PYGZsq{},
+    Multiplier \PYGZsq{}dénominateur\PYGZsq{} par 2,
+
+Si \PYGZsq{}périodique\PYGZsq{} est vraie :
+    Si \PYGZsq{}irréductible\PYGZsq{} est vraie :
+        Renvoyer la fraction irréductible \PYGZsq{}numérateur\PYGZsq{}/(\PYGZsq{}dénominateur\PYGZsq{}\PYGZhy{}1).
+    Sinon :
+        Renvoyer la fraction \PYGZsq{}numérateur\PYGZsq{}/(dénominateur\PYGZsq{}\PYGZhy{}1).
+Sinon :
+    Si \PYGZsq{}irréductible\PYGZsq{} est vraie :
+        Renvoyer la fraction irréductible \PYGZsq{}numérateur\PYGZsq{}/\PYGZsq{}dénominateur\PYGZsq{}.
+    Sinon :
+        Renvoyer la fraction \PYGZsq{}numérateur\PYGZsq{}/\PYGZsq{}dénominateur\PYGZsq{}.
+\end{Verbatim}

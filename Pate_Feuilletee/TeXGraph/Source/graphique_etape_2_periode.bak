@@ -1,0 +1,20 @@
+TeXgraph#
+{version 1.988}
+Cmd
+	Window(-0.185+1.1*i, 1.1-0.185*i, 11.6731517509728+11.6731517509728*i); 
+	Margin(0, 0, 0, 0);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=3];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph user_1 = [
+	view(-0.185,1.1,-0.185,1.1),Margin(0,0,0,0),size(15),Width:=8,LabelSize:=19,
+	draw("axes",[0,1+i],[xylabelsep:=[0.1,0.1-i/20],Arrows:=1]),
+	Label(-1/10+i/2,"$f^2\left(x\right)$"),Label(1/2-i/20,"$x$"),Label(1+7*i/8,"$y=x$"),
+	Color:=blue,NbPoints:=5,tMin:=0,tMax:=1,Cartesienne(1-abs(2*(1-abs(2*x-1))-1)),
+	Color:=orange,tMin:=-0.2,tMax:=1.1,Cartesienne(x),
+	L:=(Get(Cartesienne(x)) InterL Get(Cartesienne(1-abs(2*(1-abs(2*x-1))-1)))),
+	Color:=dark,DotSize:=4,Dot(L)
+	];

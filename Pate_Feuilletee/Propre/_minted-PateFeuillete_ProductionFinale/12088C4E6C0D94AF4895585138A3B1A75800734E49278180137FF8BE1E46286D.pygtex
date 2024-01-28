@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Définir une fonction \PYGZsq{}binaire\PYGZsq{} de paramètres \PYGZsq{}numérateur\PYGZsq{}, \PYGZsq{}dénominateur\PYGZsq{} et \PYGZsq{}précision\PYGZsq{},
+Définir \PYGZsq{}unité\PYGZsq{} comme chiffre des unités et le mettre à 0,
+Définir la chaîne de caractère \PYGZsq{}binaire\PYGZsq{},
+Tant qu\PYGZsq{}il reste des chiffres à calculer :
+    Doubler le numérateur,
+    Si le numérateur est supérieur ou égal au dénominateur :
+        Mettre \PYGZsq{}unité\PYGZsq{} à 1,
+    Sinon :
+        Mettre \PYGZsq{}unité\PYGZsq{} à 0,
+    Ajouter \PYGZsq{}unité\PYGZsq{} à la chaîne \PYGZsq{}binaire\PYGZsq{},
+    Soustraire le numérateur au dénominateur si \PYGZsq{}unité\PYGZsq{} vaut 1,
+Afficher \PYGZsq{}binaire\PYGZsq{}.
+\end{Verbatim}

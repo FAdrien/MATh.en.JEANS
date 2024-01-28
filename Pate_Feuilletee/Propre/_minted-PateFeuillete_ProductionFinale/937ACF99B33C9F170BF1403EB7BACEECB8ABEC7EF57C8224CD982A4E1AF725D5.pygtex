@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{position\PYGZus{}apres\PYGZus{}etape}\PYG{p}{(}\PYG{n}{num}\PYG{p}{,}\PYG{n}{den}\PYG{p}{,}\PYG{n}{etape}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Calcul de la position \PYGZdq{}num/den\PYGZdq{} après un nombre d\PYGZsq{}étapes donné.\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{c+c1}{\PYGZsh{} Pour chaque étape on calcul la nouvelle position de la coquille.}
+    \PYG{k}{for} \PYG{n}{k} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{etape}\PYG{p}{):}
+        \PYG{k}{if} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{num}\PYG{o}{\PYGZgt{}}\PYG{n}{den}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} Si la position est \PYGZgt{} à 1/2.}
+            \PYG{n}{num}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{p}{(}\PYG{n}{den}\PYG{o}{\PYGZhy{}}\PYG{n}{num}\PYG{p}{)}
+        \PYG{k}{else}\PYG{p}{:}\PYG{n}{num}\PYG{o}{*=}\PYG{l+m+mi}{2} \PYG{c+c1}{\PYGZsh{} Si la position est \PYGZlt{}= 1/2 on multiplie par 2.}
+    \PYG{c+c1}{\PYGZsh{} On renvoie le numérateur et le dénominateur.}
+    \PYG{k}{return} \PYG{n}{num}\PYG{p}{,}\PYG{n}{den}
+\end{Verbatim}

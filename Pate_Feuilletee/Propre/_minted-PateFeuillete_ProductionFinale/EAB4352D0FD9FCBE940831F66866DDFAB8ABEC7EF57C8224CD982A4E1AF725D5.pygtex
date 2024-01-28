@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{Position\PYGZus{}apres\PYGZus{}etapes} \PYG{k+kn}{import} \PYG{n}{position\PYGZus{}apres\PYGZus{}etape}
+
+\PYG{k}{def} \PYG{n+nf}{periode\PYGZus{}position}\PYG{p}{(}\PYG{n}{num}\PYG{p}{,}\PYG{n}{den}\PYG{p}{,}\PYG{n}{etape\PYGZus{}max}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{)} \PYG{p}{:}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Cherche si la position \PYGZdq{}num/den\PYGZdq{} a une période inférieure ou égal à \PYGZdq{}etape\PYGZus{}max\PYGZdq{}.\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{num1}\PYG{o}{=}\PYG{n}{num} \PYG{c+c1}{\PYGZsh{} On stocke \PYGZdq{}num\PYGZdq{} ailleurs pour la comparaison ligne 9.}
+    \PYG{k}{for} \PYG{n}{k} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{etape\PYGZus{}max}\PYG{p}{)} \PYG{p}{:}
+        \PYG{n}{num1}\PYG{o}{=}\PYG{n}{position\PYGZus{}apres\PYGZus{}etape}\PYG{p}{(}\PYG{n}{num1}\PYG{p}{,}\PYG{n}{den}\PYG{p}{)[}\PYG{l+m+mi}{0}\PYG{p}{]}
+        \PYG{k}{if} \PYG{n}{num1}\PYG{o}{==}\PYG{n}{num} \PYG{p}{:}
+            \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}\PYGZsq{}\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{num}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{den}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}\PYGZsq{} est \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{k}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}périodique.\PYGZdq{}}
+    \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}\PYGZsq{}\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{num}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{den}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}\PYGZsq{} ne se répète pas avant \PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{etape\PYGZus{}max}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{} étapes.\PYGZdq{}}
+\end{Verbatim}

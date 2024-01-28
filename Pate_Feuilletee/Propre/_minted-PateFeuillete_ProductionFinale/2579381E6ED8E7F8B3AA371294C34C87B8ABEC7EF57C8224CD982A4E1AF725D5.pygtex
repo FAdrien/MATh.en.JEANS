@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{fractions} \PYG{k+kn}{import} \PYG{n}{Fraction}
+
+\PYG{k}{def} \PYG{n+nf}{binaire\PYGZus{}vers\PYGZus{}decimale}\PYG{p}{(}\PYG{n}{binaire}\PYG{p}{,}\PYG{n}{periodique}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,}\PYG{n}{irreductible}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Renvoie le rationnel (entre 0 et 1) en base 10 de \PYGZsq{}binaire\PYGZsq{}.}
+\PYG{l+s+sd}{       Si le bloc de chiffres \PYGZsq{}binaire\PYGZsq{} est périodique mettre \PYGZsq{}periodique\PYGZsq{} à \PYGZsq{}True\PYGZsq{}.}
+\PYG{l+s+sd}{       Le rationnel renvoyé est un tuple numérateur/dénominateur.}
+\PYG{l+s+sd}{       Si \PYGZsq{}irreductible\PYGZsq{} vaut \PYGZsq{}True\PYGZsq{}, la fractions renvoyée est irréductible.}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{num}\PYG{o}{=}\PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} Le numérateur du rationnel.}
+    \PYG{n}{den}\PYG{o}{=}\PYG{l+m+mi}{1} \PYG{c+c1}{\PYGZsh{} Le dénominateur du rationnel.}
+    \PYG{k}{for} \PYG{n}{chiffre} \PYG{o+ow}{in} \PYG{n}{binaire}\PYG{p}{[::}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]:} \PYG{c+c1}{\PYGZsh{} Pour parcourir \PYGZsq{}binaire\PYGZsq{} à l\PYGZsq{}envers.}
+        \PYG{n}{num}\PYG{o}{+=}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{chiffre}\PYG{p}{)}\PYG{o}{*}\PYG{n}{den} \PYG{c+c1}{\PYGZsh{} Calcul du numérateur.}
+        \PYG{n}{den}\PYG{o}{*=}\PYG{l+m+mi}{2} \PYG{c+c1}{\PYGZsh{} On multiplie le dénominateur par 2 (soucis de rapidité).}
+    \PYG{k}{if} \PYG{n}{periodique}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{irreductible}\PYG{p}{:}\PYG{k}{return} \PYG{n}{Fraction}\PYG{p}{(}\PYG{n}{num}\PYG{p}{,}\PYG{n}{den}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Si la fraction doit être irréductible.}
+        \PYG{k}{return} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{num}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{den}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} On retourne la fraction.}
+    \PYG{k}{if} \PYG{n}{irreductible}\PYG{p}{:}\PYG{k}{return} \PYG{n}{Fraction}\PYG{p}{(}\PYG{n}{num}\PYG{p}{,}\PYG{n}{den}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Si la fraction doit être irréductible.}
+    \PYG{k}{return} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{num}\PYG{p}{)}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}/\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{den}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} On retourne la fraction.}
+
+\end{Verbatim}

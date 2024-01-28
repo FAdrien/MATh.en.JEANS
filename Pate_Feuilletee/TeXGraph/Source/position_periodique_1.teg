@@ -1,0 +1,18 @@
+TeXgraph#
+{version 1.99}
+Cmd
+	Window(-1.5+1.5*i, 1.5-1.5*i, 4.66666666666667+4.66666666666667*i); 
+	Margin(0.5, 0.5, 0.5, 0.5);
+	Border(0);
+	[OriginalCoord(1), IdMatrix()];
+	[theta:=0.5236, phi:=1.0472, IdMatrix3D(), ModelView(ortho)];
+	[GrayScale(0), ComptGraph:=2];
+
+Cmd	[tMin:=-5,tMax:=5,DotScale:=1+i];
+Graph user_1 = [//command
+	view(-1.5,1.5,-1.5,1.5),size(15),LabelSize:=19,
+	Dcircle(0,1),
+	LabelDot(i,"$k_1$","N",1),
+	Arrows:=1,Width:=8,
+	Arc(i,0,-sqrt(2)/2+i*sqrt(2)/2,1,1),
+	];

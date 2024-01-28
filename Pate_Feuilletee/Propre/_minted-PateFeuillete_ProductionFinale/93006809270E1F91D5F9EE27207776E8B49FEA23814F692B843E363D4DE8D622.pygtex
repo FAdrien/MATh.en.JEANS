@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Définir une position entre 0 et 1,
+Définir un nombre d\PYGZsq{}étapes,
+Tant qu\PYGZsq{}il reste des étapes :
+    Si la position est entre 0 et 1/2 :
+        Doubler la position,
+    Sinon :
+        Multiplier la position par \PYGZhy{}2 et ajouter 2,
+Afficher la position.
+\end{Verbatim}
